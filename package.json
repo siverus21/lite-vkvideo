@@ -1,0 +1,45 @@
+{
+  "name": "@siverus21/lite-vkvideo",
+  "version": "1.0.0",
+  "description": "Lightweight Shadow DOM facade for VK Video embeds",
+  "author": "youpi021 <grisha2182@gmail.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "main": "lite-vkvideo.js",
+  "module": "lite-vkvideo.js",
+  "exports": {
+    ".": "./lite-vkvideo.js",
+    "./vk-poster": "./vk-poster.mjs"
+  },
+  "files": [
+    "lite-vkvideo.js",
+    "vk-poster.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node vk-poster.mjs --demo",
+    "poster": "node vk-poster.mjs",
+    "prepublishOnly": "node --check lite-vkvideo.js && node --check vk-poster.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siverus21/lite-vkvideo.git"
+  },
+  "homepage": "https://github.com/siverus21/lite-vkvideo#readme",
+  "bugs": {
+    "url": "https://github.com/siverus21/lite-vkvideo/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "web components",
+    "custom elements",
+    "vk",
+    "vkvideo",
+    "video",
+    "embed",
+    "lite"
+  ]
+}

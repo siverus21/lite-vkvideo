@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>lite-vkvideo</title>
+    <script type="module" src="../lite-vkvideo.js"></script>
+    <style>
+      body {
+        max-width: 800px;
+        margin: 2rem auto;
+        font-family: system-ui, sans-serif;
+      }
+      pre {
+        padding: 1em;
+        overflow-x: auto;
+        background: #eee;
+      }
+      lite-vkvideo {
+        margin: 1rem 0 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>lite-vkvideo</h1>
+
+    <h3>Базовое использование</h3>
+    <pre>&lt;lite-vkvideo
+  oid="-22822305"
+  videoid="456242110"
+  hash="e037414127166efe"
+&gt;&lt;/lite-vkvideo&gt;</pre>
+    <lite-vkvideo
+      oid="-22822305"
+      videoid="456242110"
+      hash="e037414127166efe"
+    ></lite-vkvideo>
+
+    <h3>С заголовком</h3>
+    <lite-vkvideo
+      oid="-22822305"
+      videoid="456242110"
+      hash="e037414127166efe"
+      videotitle="Анимированные vmoji в VK Звонках"
+    ></lite-vkvideo>
+
+    <h3>С border</h3>
+    <lite-vkvideo
+      oid="-22822305"
+      videoid="456242110"
+      hash="e037414127166efe"
+      videotitle="С рамкой"
+      border
+    ></lite-vkvideo>
+
+    <h3>Старт с 5 секунды (`t` / `videostartat`)</h3>
+    <lite-vkvideo
+      oid="-22822305"
+      videoid="456242110"
+      hash="e037414127166efe"
+      videotitle="Start at 5s"
+      t="5"
+    ></lite-vkvideo>
+
+    <h3>hd=2 + loop</h3>
+    <pre>&lt;lite-vkvideo oid="…" videoid="…" hash="…" hd="2" loop&gt;&lt;/lite-vkvideo&gt;</pre>
+    <lite-vkvideo
+      oid="-22822305"
+      videoid="456242110"
+      hash="e037414127166efe"
+      videotitle="HD 480p + loop"
+      hd="2"
+      loop
+    ></lite-vkvideo>
+
+    <h3>mute</h3>
+    <pre>&lt;lite-vkvideo oid="…" videoid="…" hash="…" mute autoplay&gt;&lt;/lite-vkvideo&gt;</pre>
+    <lite-vkvideo
+      oid="-22822305"
+      videoid="456242110"
+      hash="e037414127166efe"
+      videotitle="Mute"
+      mute
+      autoplay
+    ></lite-vkvideo>
+
+    <h3>unmute</h3>
+    <pre>&lt;lite-vkvideo oid="…" videoid="…" hash="…" unmute autoplay&gt;&lt;/lite-vkvideo&gt;</pre>
+    <lite-vkvideo
+      oid="-22822305"
+      videoid="456242110"
+      hash="e037414127166efe"
+      videotitle="Unmute"
+      unmute
+      autoplay
+    ></lite-vkvideo>
+
+    <h3>autoload + autoplay</h3>
+    <p>Iframe при появлении в зоне видимости, с автозапуском.</p>
+    <lite-vkvideo
+      oid="-22822305"
+      videoid="456242110"
+      hash="e037414127166efe"
+      videotitle="Autoload + autoplay"
+      autoload
+      autoplay
+    ></lite-vkvideo>
+  </body>
+</html>
